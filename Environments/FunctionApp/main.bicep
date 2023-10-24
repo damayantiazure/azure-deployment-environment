@@ -1,5 +1,6 @@
 // Copyright (c) Microsoft Corporation.
 // Licensed under the MIT License.
+// test change
 
 @description('Name of the Function App')
 param name string
