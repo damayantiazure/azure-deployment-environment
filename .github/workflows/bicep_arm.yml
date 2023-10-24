@@ -6,7 +6,7 @@ on:
     paths:
       # only run if bicep files changed
       - 'Environments/**/*.bicep'
-
+#jobs
 jobs:
   build:
     runs-on: ubuntu-latest
