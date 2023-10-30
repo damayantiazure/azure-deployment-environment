@@ -1,7 +1,7 @@
 # yaml-language-server: $schema=https://github.com/Azure/deployment-environments/releases/download/2022-11-11-preview/manifest.schema.json
 name: FunctionApp
 version: 1.0.0
-summary: Azure Function App Environments
+summary: Azure Function App Environments.
 description: Deploys an Azure Function App, Storage Account, and Application Insights
 runner: ARM
 templatePath: azuredeploy.json
@@ -15,7 +15,7 @@ parameters:
 
   - id: supportsHttpsTrafficOnly
     name: 'Supports Https Traffic Only'
-    description: 'Allows https traffic only to Storage Account and Functions App if set to true.'
+    description: 'Allows https traffic only to Storage Account and Functions App if set to true...'
     type: boolean
 
   - id: runtime
