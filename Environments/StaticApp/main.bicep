@@ -1,5 +1,6 @@
 // param location string = 'westeurope'
 // param location_suffix string = 'demo1'
+// param location_suffix string = 'demo2'
 
 param location string = resourceGroup().location
 param vnetNamevar string = 'vnet${uniqueString(resourceGroup().id)}'
