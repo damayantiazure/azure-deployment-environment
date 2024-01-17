@@ -1,7 +1,7 @@
 // param location string = 'westeurope'
 // param location_suffix string = 'demo1'
 // param location_suffix string = 'demo2'
-
+param subnetAddressPrefix string = '3'
 param location string = resourceGroup().location
 param vnetNamevar string = 'vnet${uniqueString(resourceGroup().id)}'
 param vnetAdressSpace string = '10.${subnetAddressPrefix}.0.0/16'
