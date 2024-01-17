@@ -100,15 +100,14 @@ resource managedIdentity 'Microsoft.ManagedIdentity/userAssignedIdentities@2018-
   location: location
 }
 
-// resource roleAssignment 'Microsoft.Authorization/roleAssignments@2020-04-01-preview' = {
-//   scope: storageAccount
-//   name: guid(resourceGroup().id, managedIdentity.id, contributorRoleDefinition.id)
-//   properties: {
-//     roleDefinitionId: contributorRoleDefinition.id
-//     principalId: managedIdentity.properties.principalId
-//     principalType: 'ServicePrincipal'
-//   }
-// }
+resource roleAssignment 'Microsoft.Authorization/roleAssignments@2020-10-01-preview' = {
+  name: 'name'
+  properties: {
+    roleDefinitionId: 'roleDefinitionId'
+    principalId: 'principalId'
+    principalType: 'ServicePrincipal'
+  }
+}
 
 resource symbolicname 'Microsoft.Web/staticSites@2022-09-01' = {
   name: staticwebname
