@@ -1,0 +1,6 @@
+name: StaticWebApp
+version: 1.0.0
+summary: Azure Static Web App
+description: Deploys an Azure Azure Static Web App with its component.
+runner: ARM
+templatePath: azuredeploy.json
